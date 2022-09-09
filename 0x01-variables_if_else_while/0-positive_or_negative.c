@@ -8,6 +8,12 @@
 
 /* betty style doc for function main goes there */
 
+/**
+ * main - does nothing with void as arg
+ *
+ * Return: a null value to destroy or stop program
+ */
+
 int main(void)
 
 {
