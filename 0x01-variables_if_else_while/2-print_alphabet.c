@@ -25,8 +25,7 @@ int main(void)
 	x = 'A';
 	while (x <= 'Z')
 	{
-		x = tolower(x);
-		putchar(x);
+		putchar(tolower(x));
 		x++;
 	}
 	return (0);
