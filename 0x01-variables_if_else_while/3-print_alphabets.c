@@ -21,13 +21,13 @@ int main(void)
 /* your code goes there */
 
 	int x, y;
+
 	x = 'a';
 	while (x <= 'z')
 	{
 		putchar(x);
 		x++;
 	}
-	
 	y = 'A';
 	while (y <= 'Z')
 	{
