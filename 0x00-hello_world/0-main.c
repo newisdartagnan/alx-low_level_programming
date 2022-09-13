@@ -6,6 +6,8 @@
  * Return: Always 0 (Success)
  */
 int main(void)
+
 {
+	printf('hello');
 	return (0);
 }
