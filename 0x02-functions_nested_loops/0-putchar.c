@@ -1,13 +1,27 @@
 #include <stdio.h>
 #include <string.h>
+
 #include "main.h"
 /**
- * _once - writes the character _putchar to stdout
- * @_putchar: The character to print
+ * _once - Does nothing with void as arg
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Description: Does nothing with void as arg
+ * Return: on success print caractere 1.
  */
+
+
+
+/* betty style doc for function main goes there */
+
+/**
+ * main - function main to start program
+ * @void
+ * Context: _once()
+ * Description: Does nothing with void as arg
+ * Return: to end program 0.
+ */
+
+
 char _once(void)
 {
 	char c[8];
@@ -22,15 +36,14 @@ char _once(void)
 	c[6] = 'a';
 	c[7] = 'r';
 	c[8] = '\0';
-	
-	for (i = 0; (long unsigned int)i < strlen (c); i++)
+	for (i = 0; i < strlen(c); i++)
 	{
 		_putchar(c[i]);
 	}
-	return (0);
+	_putchar('\n');
 }
 int main(void)
 {
 	_once();
-	return 0;
+	return (0);
 }
