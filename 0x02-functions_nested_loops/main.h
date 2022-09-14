@@ -12,3 +12,10 @@ char _once(void);
 
 #endif
 
+#ifndef PALPHABET_H_
+#define PALPHABET_H_
+
+void print_alphabet(void);
+
+#endif
+
