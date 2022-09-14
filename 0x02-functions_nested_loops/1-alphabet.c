@@ -19,16 +19,4 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 }
-/**
- * main - Brief description of function.
- * Return: Describe the return value of function_name.
- *
- * The return value description can also have multiple paragraphs, and should
- * be placed at the end of the comment block.
- */
 
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
