@@ -9,14 +9,6 @@
  * Return: on success print caractere 1.
  */
 
-/**
- * main - Brief description of function.
- * Return: Describe the return value of function_name.
- *
- * The return value description can also have multiple paragraphs, and should
- * be placed at the end of the comment block.
- */
-
 char _once(void)
 {
 	char c[8];
@@ -38,6 +30,13 @@ char _once(void)
 	_putchar('\n');
 	return (0);
 }
+/**
+ * main - Brief description of function.
+ * Return: Describe the return value of function_name.
+ *
+ * The return value description can also have multiple paragraphs, and should
+ * be placed at the end of the comment block.
+ */
 
 int main(void)
 {
