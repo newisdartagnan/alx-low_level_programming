@@ -36,11 +36,12 @@ char _once(void)
 	c[6] = 'a';
 	c[7] = 'r';
 	c[8] = '\0';
-	for (i = 0; i < strlen(c); i++)
+	for (i = 0; (long unsigned int)i < strlen(c); i++)
 	{
 		_putchar(c[i]);
 	}
 	_putchar('\n');
+	return (0);
 }
 int main(void)
 {
