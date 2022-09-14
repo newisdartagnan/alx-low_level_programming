@@ -8,7 +8,7 @@ int _putchar(char c);
 #ifndef ONCE_H_
 #define ONCE_H_
 
-char _once(char _putchar);
+char _once(void);
 
 #endif
 
