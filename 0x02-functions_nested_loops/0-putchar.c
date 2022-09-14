@@ -9,18 +9,13 @@
  * Return: on success print caractere 1.
  */
 
-
-
-/* betty style doc for function main goes there */
-
 /**
- * main - function main to start program
- * @void
- * Context: _once()
- * Description: Does nothing with void as arg
- * Return: to end program 0.
+ * main - Brief description of function.
+ * Return: Describe the return value of function_name.
+ *
+ * The return value description can also have multiple paragraphs, and should
+ * be placed at the end of the comment block.
  */
-
 
 char _once(void)
 {
@@ -36,13 +31,14 @@ char _once(void)
 	c[6] = 'a';
 	c[7] = 'r';
 	c[8] = '\0';
-	for (i = 0; (long unsigned int)i < strlen(c); i++)
+	for (i = 0; i < 8; i++)
 	{
 		_putchar(c[i]);
 	}
 	_putchar('\n');
 	return (0);
 }
+
 int main(void)
 {
 	_once();
