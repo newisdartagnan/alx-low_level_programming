@@ -19,3 +19,10 @@ void print_alphabet(void);
 
 #endif
 
+#ifndef OTHERPALP_H__
+#define OTHERPALP_H_
+
+void print_alphabet_x10(void);
+
+#endif
+
