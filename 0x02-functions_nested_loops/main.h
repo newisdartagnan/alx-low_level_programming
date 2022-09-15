@@ -26,3 +26,10 @@ void print_alphabet_x10(void);
 
 #endif
 
+#ifndef ISLOWER_H_
+#define ISLOWER_H_
+
+int _islower(int c);
+
+#endif
+
