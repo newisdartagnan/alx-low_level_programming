@@ -39,3 +39,11 @@ int _islower(int c);
 int _isalpha(int c);
 
 #endif
+
+#ifndef PRINTSIGN_H_
+#define PRINTSIGN_H_
+
+int print_sign(int n);
+
+#endif
+
