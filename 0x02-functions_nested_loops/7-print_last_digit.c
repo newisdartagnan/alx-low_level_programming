@@ -10,8 +10,8 @@
 
 int print_last_digit(int x)
 {
-	unsigned int d;
+	int d;
 
 	d = x % 10;
-	return (d);
+	return ((unsigned int)((d < 0) ? -d : d));
 }
