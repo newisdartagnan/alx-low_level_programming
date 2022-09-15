@@ -53,3 +53,11 @@ int print_sign(int n);
 int _abs(int);
 
 #endif
+
+#ifndef PRINTLAST_H_
+#define PRINTLAST_H_
+
+int print_last_digit(int);
+
+#endif
+
