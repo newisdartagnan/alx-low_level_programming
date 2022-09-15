@@ -33,3 +33,9 @@ int _islower(int c);
 
 #endif
 
+#ifndef ISALPHA_H_
+#define ISALPHA_H_
+
+int _isalpha(int c);
+
+#endif
