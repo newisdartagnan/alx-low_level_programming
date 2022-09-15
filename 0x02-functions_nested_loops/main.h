@@ -47,3 +47,9 @@ int print_sign(int n);
 
 #endif
 
+#ifndef ABS_H_
+#define ABS_H_
+
+int _abs(int);
+
+#endif
