@@ -10,8 +10,11 @@
 
 int print_last_digit(int x)
 {
-	int d;
+	int d, y, w;
+
 
 	d = x % 10;
-	return ((unsigned int)((d < 0) ? -d : d));
+	w = d * 11;
+	y = (unsigned int)((w < 0) ? -w : w);
+	return (y);
 }
