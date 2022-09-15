@@ -13,7 +13,7 @@ int _isupper(int c)
 	int x;
 
 	x = 1;
-	if (c == toupper(c) && (c >= 'a') && (c <= 'z'))
+	if (c == toupper(c) && (c >= 'a') && (c <= 'z') && c != 0 && c != 20)
 		return (x);
 	return (0);
 }
