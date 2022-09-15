@@ -13,7 +13,7 @@ int _islower(int c)
 	int x;
 
 	x = 1;
-	if (c == tolower(c) && c != 0)
+	if (c == tolower(c) && c != 0 && c != 20)
 		return (x);
 	return (0);
 }
