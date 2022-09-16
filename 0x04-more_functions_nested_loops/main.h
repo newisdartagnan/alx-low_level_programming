@@ -39,3 +39,10 @@ void print_numbers(void);
 void print_most_numbers(void);
 
 #endif
+
+#ifndef MNUM_H_
+#define MNUM_H_
+
+void more_numbers(void);
+
+#endif
