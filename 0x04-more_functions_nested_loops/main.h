@@ -33,3 +33,9 @@ void print_numbers(void);
 
 #endif
 
+#ifndef PRINTMNUM_H_
+#define PRINTMNUM_H_
+
+void print_most_numbers(void);
+
+#endif
