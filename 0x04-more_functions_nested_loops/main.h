@@ -12,4 +12,10 @@ int _isupper(int c);
 
 #endif
 
+#ifndef ISDIGIT_H_
+#define ISDIGIT_H_
+
+int _isdigit(int c);
+
+#endif
 
