@@ -26,3 +26,10 @@ int mul(int a, int b);
 
 #endif
 
+#ifndef PRINTNUM_H_
+#define PRINTNUM_H_
+
+void print_numbers(void);
+
+#endif
+
