@@ -19,3 +19,10 @@ int _isdigit(int c);
 
 #endif
 
+#ifndef MULT_H_
+#define MULT_H_
+
+int mul(int a, int b);
+
+#endif
+
