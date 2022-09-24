@@ -12,3 +12,9 @@ void reset_to_98(int *n);
 
 #endif
 
+#ifndef SWAP_H_
+#define SWAP_H_
+
+void swap_int(int *a, int *b);
+
+#endif
