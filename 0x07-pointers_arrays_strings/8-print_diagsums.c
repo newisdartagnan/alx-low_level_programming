@@ -20,11 +20,11 @@ void print_diagsums(int *a, int size)
 	for (l = 0; l < 3; l++)
 	{
 		s1 += *(a + i);
-		s2 += *(a + size + k);
+		s2 += *(a + i + j);
 		i += m;
 		k += m - j;
 		j++;
 	}
-	printf("%d, %d\n", s1, s2);
+	printf("%d, %d\n", s2, s1);
 
 }
