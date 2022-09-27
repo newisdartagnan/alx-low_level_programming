@@ -7,20 +7,21 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	long unsigned int i;
-
-	if (*needle == '\0')
+	if (haystack == NULL || needle == NULL)
 	{
-		return (haystack);
+		return (NULL);
 	}
 
-	for (i = 0; i < strlen(haystack); i++)
+	for ( ; *haystack; haystack++)
 	{
-		if (*(haystack + i) == (*needle))
-		{
-			char *p = strstr(haystack + i + 1, needle + 1);
+		const char *h, *n;
 
-			return ((p) ? p - 1 : NULL);
+		for (h = haystack, n = needle; *h && *n && (*h == *n); ++h, ++n)
+		{
+		}
+		if (*n == '\0')
+		{
+			return (haystack);
 		}
 	}
 
