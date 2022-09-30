@@ -21,11 +21,10 @@ void more_numbers(void)
 		}
 		c = 49;
 		while (c < 50)
-		{
-			i = 48;
+		{	i = 48;
 			while (i < 53)
 			{
-				_putchar(c);
+				
 				_putchar(i);
 				i++;
 			}

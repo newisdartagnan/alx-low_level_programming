@@ -34,14 +34,14 @@ int main(void)
 				x = 48;
 				while (x <= 57)
 				{
-					if ((z <= y) && (w <= y) && (z < x))
+					if (((z <= y) && (w <= y)) && ((z < x) || (w <= x)))
 					{
 						putchar(w);
 						putchar(z);
 						putchar(' ');
 						putchar(y);
 						putchar(x);
-						if ((w == 57) && (y == 57) && (x == 57) && (z == 56))
+						if (w == 57 && z == 56)
 						{
 							break;
 						}
