@@ -6,11 +6,18 @@
  */
 char print_rev_recursion(char *s)
 {
-	if (*s != '\0')
+	int rem;
+	int sum = 0;
+
+	if (s != 0)
 	{
-		print_rev_recursion(s + 1);
+		rem = s % 10;
+		sum = sum * 10 + rem;
+		print_rev_recursion(s / 10);
 	}
-	return (*s);
+	else
+		return (sum);
+	return (sum);
 }
 
 /**
