@@ -10,6 +10,8 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
+	if (dst == NULL)
+		return (NULL);
 	strcpy(dst, str);
 	return (dst);
 }
