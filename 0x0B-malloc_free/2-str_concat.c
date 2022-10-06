@@ -17,6 +17,10 @@ char *str_concat(char *s1, char *s2)
 
 	if (ret == NULL)
 		return (NULL);
+	if (s1 == NULL)
+		strcpy(ret, "");
+	if (s2 == NULL)
+		strcpy(ret + a, "");
 	strcpy(ret, s1);
 	strcpy(ret + a, s2);
 	return (ret);
