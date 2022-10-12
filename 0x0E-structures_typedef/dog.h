@@ -15,7 +15,7 @@
  *
  * Description: Longer description
  */
-typedef struct dog dog;
+
 
 struct dog
 {
