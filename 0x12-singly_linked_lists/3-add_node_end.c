@@ -8,14 +8,14 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new, *temp;
-	size_t n;
+	size_t n = 0;
 
 	new = malloc(sizeof(list_t));
 
 	new->str = strdup(str);
 
-	for (n = 0; str[n]; n++)
-		;
+	while (str[n])
+		n += 1;
 	if (new == NULL)
 		return (NULL);
 	new->len = n;
