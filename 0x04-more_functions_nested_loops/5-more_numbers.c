@@ -1,38 +1,27 @@
 #include <stdio.h>
 #include <ctype.h>
 #include "main.h"
+
 /**
- * more_numbers - Does nothing with void as arg
- * Description: Does nothing with void as arg
- * Return: on success print caractere 1.
+ * more_numbers - prints 0 to 14 on one line ten times.
+ *
  */
 void more_numbers(void)
 {
-	int i, j, c;
+	int i;
+	int num = 0;
 
-	j = 0;
-	while (j < 10)
+	for (i = 0 ; i < 10 ; i++)
 	{
-		c = 48;
-		while (c < 58)
+		while (num < 15)
 		{
-			_putchar(c);
-			c++;
+			if (num > 9)
+				_putchar('0' + num / 10);
+			_putchar('0' + num % 10);
+			num++;
 		}
-		c = 49;
-		while (c < 50)
-		{	i = 48;
-			while (i < 53)
-			{
-				
-				_putchar(i);
-				i++;
-			}
-			c++;
-		}
+		num = 0;
 		_putchar('\n');
-		j++;
 	}
 }
-
 
