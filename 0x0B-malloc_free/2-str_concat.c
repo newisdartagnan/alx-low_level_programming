@@ -8,20 +8,33 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *ret;
-	size_t a = strlen(s1), b = strlen(s2), st = a + b + 1;
+	int a, b, c;
+	char *str;
 
-	if (st < b + 1)
-		return (NULL);
-	ret = malloc(st);
+	a = b = 0;
+	if (s1 != NULL)
+		for (a = 0; s1[a]; a++)
+			;
+	if (s2 != NULL)
+		for (b = 0; s2[b]; b++)
+			;
 
-	if (ret == NULL)
+	str = malloc(sizeof(char) * (a + b + 1));
+	if (str == NULL)
 		return (NULL);
-	if (s1 == NULL)
-		strcpy(ret, "");
-	if (s2 == NULL)
-		strcpy(ret + a, "");
-	strcpy(ret, s1);
-	strcpy(ret + a, s2);
-	return (ret);
+
+	c = 0;
+	while (c < (a + b))
+	{
+		if (c < a)
+			str[c] = s1[c];
+		else
+			str[c] = s2[c - a];
+
+		c++;
+	}
+	str[c] = 0;
+
+	return (str);
+
 }

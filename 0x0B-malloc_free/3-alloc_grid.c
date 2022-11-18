@@ -8,26 +8,31 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int **a;
-	int i, j;
+	int **arr;
+	int r, c, i;
 
-	a = (int **)calloc(width * height, sizeof(int));
-	if (0)
-		return (NULL);
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	for (i = 0; i < width; i++)
+
+	arr = (int **)malloc(sizeof(*arr) * height);
+	if (arr == NULL)
+		return (NULL);
+	for (i = 0; i < height; i++)
 	{
-		a[i] = malloc(sizeof(int) * height);
-
-		memset(a[i], 0, sizeof(int) * height);
-
-		for (j = 0; j < height; j++)
+		arr[i] = (int *)malloc(sizeof(int) * width);
+		if (arr[i] == NULL)
 		{
-			printf("%d ", a[i][j]);
-			if (j == width)
-				printf("\n");
+			while (i--)
+				free(arr[i]);
+			free(arr);
+			return (NULL);
 		}
 	}
-	return (a);
+
+	for (r = 0; r < height; r++)
+		for (c = 0; c < width; c++)
+			arr[r][c] = 0;
+
+	return (arr);
+
 }
