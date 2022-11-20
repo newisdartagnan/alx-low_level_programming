@@ -1,15 +1,33 @@
-#include <stdio.h>
 #include "function_pointers.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
-int main(void)
+int main(int argc, char *argv[])
 {
-	int array[5] = {0, 98, 402, 1024, 4096};
+	int a_int, b_int, result;
+	char *op;
 
-	array_iterator(array, 5, &print_elem);
-	array_iterator(array, 5, &print_elem_hex);
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	a_int = atoi(argv[1]);
+	b_int = atoi(argv[3]);
+	op = argv[2];
+	
+	if (!(get_op_func(op)))
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	result = (get_op_func(op))(a_int, b_int);
+	printf("%d\n", result);
+
 	return (0);
 }
